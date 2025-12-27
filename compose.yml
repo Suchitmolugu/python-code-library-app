@@ -37,5 +37,5 @@ services:
     deploy:
       replicas: 2
 volumes:
-  db-data:
+  db_data:
     
