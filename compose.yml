@@ -6,6 +6,8 @@ services:
      - "3306:3306"
    deploy:
      replicas: 2
+   volumes:
+     - db_data:/var/lib/mysql
 
   auth_service:
     image: suchitmolugu/lib-py-project:authimage
@@ -34,3 +36,6 @@ services:
       - "5000:5000"
     deploy:
       replicas: 2
+volumes:
+  db-data:
+    
